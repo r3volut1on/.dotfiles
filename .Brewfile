@@ -20,5 +20,3 @@ brew "node"
 brew "tailscale"
 brew "tmux"
 
-# LSPs
-
