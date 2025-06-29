@@ -12,7 +12,7 @@ if RbConfig::CONFIG['host_os'].start_with?('darwin')
   cask "obsidian"
 elsif RbConfig::CONFIG['host_os'].start_with?('linux')
   # Linux-specific packages
-  brew "htop"
+  brew "zsh"
 end
 
 brew "neovim"
