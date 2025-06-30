@@ -23,7 +23,8 @@ brew "ripgrep"
 # Mason.nvim likes wget
 brew "wget"
 
+brew "oh-my-posh"
+cask "font-0xproto-nerd-font"
 
 brew "node"
 brew "tailscale"
-
