@@ -18,6 +18,7 @@ end
 brew "tmux"
 brew "neovim"
 brew "ripgrep"
+brew "wget"
 
 
 brew "node"
