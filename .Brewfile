@@ -17,7 +17,10 @@ end
 
 brew "tmux"
 brew "neovim"
+# Needed by neovim telescope
 brew "ripgrep"
+
+# Mason.nvim likes wget
 brew "wget"
 
 
