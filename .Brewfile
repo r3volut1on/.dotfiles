@@ -15,8 +15,11 @@ elsif RbConfig::CONFIG['host_os'].start_with?('linux')
   brew "zsh"
 end
 
+brew "tmux"
 brew "neovim"
+brew "ripgrep"
+
+
 brew "node"
 brew "tailscale"
-brew "tmux"
 
