@@ -1,15 +1,32 @@
 require 'rbconfig'
+require 'socket'
 
+# Get the hostname
+hostname = Socket.gethostname
+puts "Hostname is: #{hostname}"
+
+
+# All Mac
 if RbConfig::CONFIG['host_os'].start_with?('darwin')
   # macOS-specific packages
   tap "nikitabobko/tap"
   cask "aerospace"
 
-  cask "discord"
-  cask "ghostty"
   cask "iterm2"
-  cask "karabiner-elements"
   cask "obsidian"
+
+  # Only home
+  if hostname == "Mac"
+    cask "discord"
+    brew "tailscale"
+    cask "ghostty"
+    cask "karabiner-elements"
+  # Only work
+  else
+    brew "squid"
+  end
+
+# All Linux
 elsif RbConfig::CONFIG['host_os'].start_with?('linux')
   # Linux-specific packages
   brew "zsh"
@@ -36,6 +53,5 @@ brew "node"
 brew "opentofu"
 brew "ansible"
 brew "ansible-lint"
+brew "ruby"
 
-# vpn
-brew "tailscale"

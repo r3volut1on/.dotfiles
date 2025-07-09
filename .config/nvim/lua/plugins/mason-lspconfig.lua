@@ -8,6 +8,7 @@ return {
                 "bashls",
                 "jsonls",
                 "lua_ls",
+                -- "ruby_lsp", after setting up asdf to override ruby path for neovim
                 "terraformls",
                 "ts_ls",
                 "yamlls",
