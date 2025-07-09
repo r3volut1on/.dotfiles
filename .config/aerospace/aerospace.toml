@@ -12,7 +12,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -63,6 +63,35 @@ automatically-unhide-macos-hidden-apps = false
     outer.bottom =     10
     outer.top =        10
     outer.right =      10
+
+
+# Assigning workspaces to monitors
+[workspace-to-monitor-force-assignment]
+# Middle
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+5 = 'main'
+6 = 'main'
+
+# Left
+Q = 2
+W = 2
+E = 2
+
+# Right
+A = 4
+S = 4
+D = 4
+
+# Laptop
+Z = '1'
+X = '1'
+C = '1'
+# Z = 'built-in'
+# X = 'built-in'
+# C = 'built-in'
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
