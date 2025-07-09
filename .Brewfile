@@ -14,6 +14,9 @@ if RbConfig::CONFIG['host_os'].start_with?('darwin')
 
   cask "iterm2"
   cask "obsidian"
+  cask "visual-studio-code"
+
+  cask "google-cloud-sdk"
 
   # Only home
   if hostname == "Mac"
@@ -23,6 +26,29 @@ if RbConfig::CONFIG['host_os'].start_with?('darwin')
     cask "karabiner-elements"
   # Only work
   else
+    # Needed for duo
+    brew "duo_unix"
+    brew "curl"
+    brew "openssl"
+    brew "ca-certificates"
+
+
+    # security
+    brew "netcat"
+    brew "squid"
+    cask "burp-suite"
+    cask "wireshark-app"
+
+    cask "hiddenbar"
+
+    tap "hashicorp/tap"
+    brew "hashicorp/tap/vault"
+
+    # don't need
+    # brew "zsh"
+    # brew "git"
+    # brew "jq"
+
     brew "squid"
   end
 
@@ -45,14 +71,25 @@ cask "font-0xproto-nerd-font"
 # other fonts
 # cask "font-space-mono-nerd-font"
 # cask "font-ubuntu-nerd-font"
+# cask "font-droid-sans-mono-nerd-font"
 
 brew "fzf"
 
 # coding
 brew "node"
-brew "opentofu"
+brew "python"
+brew "perl"
+brew "rust"
+brew "typescript"
 brew "ansible"
 brew "ansible-lint"
 brew "ruby"
 
+# infrastructure
+cask "docker-desktop"
+brew "opentofu"
+brew "awscli"
+brew "glab"
+
 brew "htop"
+brew "tree"
