@@ -105,7 +105,14 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
+# Needed for home linux
+if [[ $(uname) == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+## This might actually work on either
+export ZSH_PATH="$(which zsh)"
 
+# Not needed but nice to have for mac
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/atomic.omp.json')"
 fi

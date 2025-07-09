@@ -25,7 +25,17 @@ brew "wget"
 
 brew "oh-my-posh"
 cask "font-0xproto-nerd-font"
+# other fonts
+# cask "font-space-mono-nerd-font"
+# cask "font-ubuntu-nerd-font"
+
 brew "fzf"
 
+# coding
 brew "node"
+brew "opentofu"
+brew "ansible"
+brew "ansible-lint"
+
+# vpn
 brew "tailscale"
