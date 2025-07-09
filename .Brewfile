@@ -55,3 +55,4 @@ brew "ansible"
 brew "ansible-lint"
 brew "ruby"
 
+brew "htop"
