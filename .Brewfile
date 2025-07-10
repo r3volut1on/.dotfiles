@@ -15,6 +15,7 @@ if RbConfig::CONFIG['host_os'].start_with?('darwin')
   cask "iterm2"
   cask "obsidian"
   cask "visual-studio-code"
+  cask "docker-desktop"
 
   cask "google-cloud-sdk"
 
@@ -86,7 +87,6 @@ brew "ansible-lint"
 brew "ruby"
 
 # infrastructure
-cask "docker-desktop"
 brew "opentofu"
 brew "awscli"
 brew "glab"
