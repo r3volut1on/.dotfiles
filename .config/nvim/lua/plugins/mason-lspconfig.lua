@@ -6,6 +6,7 @@ return {
                 "ansiblels",
                 "basedpyright",
                 "bashls",
+                "gitlab_ci_ls",
                 "jsonls",
                 "lua_ls",
                 -- "ruby_lsp", after setting up asdf to override ruby path for neovim
