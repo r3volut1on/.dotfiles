@@ -88,6 +88,7 @@ brew "ruby"
 
 # infrastructure
 brew "opentofu"
+brew "openbao"
 brew "awscli"
 brew "glab"
 
