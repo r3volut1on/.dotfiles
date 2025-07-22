@@ -4,7 +4,7 @@ return {
         version = "*",
         config = true,
         keys = {
-            {  "<space>td", ":ToggleTerm direction=float dir=%:p:h<CR>", desc = "Open Git status" },
+            {  "<space>t", ":ToggleTerm direction=float dir=%:p:h<CR>", desc = "Open Git status" },
         },
     }
 }
