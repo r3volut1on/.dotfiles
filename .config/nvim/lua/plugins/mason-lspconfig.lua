@@ -10,6 +10,7 @@ return {
                 "jsonls",
                 "lua_ls",
                 -- "ruby_lsp", after setting up asdf to override ruby path for neovim
+                "rust_analyzer",
                 "terraformls",
                 "ts_ls",
                 "yamlls",
