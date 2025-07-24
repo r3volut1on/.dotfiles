@@ -77,6 +77,7 @@ cask "font-0xproto-nerd-font"
 brew "fzf"
 
 # coding
+brew "asdf"
 brew "node"
 brew "python"
 brew "perl"
