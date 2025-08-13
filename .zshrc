@@ -106,7 +106,7 @@ alias vim="nvim"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 # Needed for home linux
-if [[ $(uname) == "Linux" ]]; then
+if [[ $(uname) == "Linux" && $(hostname) == "Krakoa" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 ## This might actually work on either
