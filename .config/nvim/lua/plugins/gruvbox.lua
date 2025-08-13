@@ -1,3 +1,6 @@
 return {
-    { "ellisonleao/gruvbox.nvim" },
+    { 
+        "ellisonleao/gruvbox.nvim",
+        enabled = false,
+    },
 }
