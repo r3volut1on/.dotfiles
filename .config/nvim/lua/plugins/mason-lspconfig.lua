@@ -14,6 +14,7 @@ return {
                 "terraformls",
                 "ts_ls",
                 "yamlls",
+                "lemminx",
             },
         },
         dependencies = {
