@@ -15,6 +15,7 @@ return {
                 "ts_ls",
                 "yamlls",
                 "lemminx",
+                "powershell_es",
             },
         },
         dependencies = {
