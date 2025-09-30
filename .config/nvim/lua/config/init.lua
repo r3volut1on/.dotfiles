@@ -17,7 +17,7 @@ require("config.lsp")
 
 vim.diagnostic.config({
     underline = true,
-    virtual_text = true,
+    virtual_text = false,
     virtual_lines = true,
     update_in_insert = false,
     severity_sort = true,
